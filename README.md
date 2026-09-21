@@ -84,7 +84,7 @@ GET /api/applications/job/:jobId – Retrieve all applicants for a specific post
 PATCH /api/applications/:id/status – Update candidate application status (Recruiter only).
 
 Project Structure
-Plaintext
+```text
 mern-job-portal/
 ├── backend/
 │   ├── src/
@@ -110,6 +110,7 @@ mern-job-portal/
 │   ├── tailwind.config.js
 │   └── package.json
 └── README.md
+```
 Getting Started
 Prerequisites
 Node.js (v18+ recommended)
