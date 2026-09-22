@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-navy: #08233e;
+  --color-brand-navy-dark: #051628;
+  --color-brand-navy-light: #eef4f8;
+
+  --color-brand-cyan: #00a8cc;
+  --color-brand-cyan-hover: #0092b3;
+  --color-brand-cyan-light: #e6f8fb;
+  --color-brand-cyan-glow: rgba(0, 168, 204, 0.15);
+}
+
+:root {
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #08233e;
+  --text-muted: #627d98;
+  --border-light: #e2e8f0;
+}
+
+.dark {
+  --bg-page: #051628;
+  --bg-card: #08233e;
+  --text-main: #ffffff;
+  --text-muted: #94a3b8;
+  --border-light: #12355a;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  font-family: inherit;
+}
